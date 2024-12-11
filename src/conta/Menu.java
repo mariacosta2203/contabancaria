@@ -1,7 +1,6 @@
 package conta;
 
 import java.util.Scanner;
-
 import conta.model.Conta;
 import conta.util.Cores;
 
@@ -9,13 +8,23 @@ public class Menu {
 
 	public static void main(String[] args) {
 		
-		// Instanciamento | Classe -> Objeto Utilizavel
-					Conta c1 = new Conta(123456, 0001, 1, "Maria das Neves", 500f);
+					//Teste da classe conta
+					Conta c1 = new Conta(1, 123, 1, "Adriana", 10000.0f);
+					c1.visualizar();
+					c1.sacar(12000.0f);
+					c1.visualizar();
+					c1.depositar(5000.0f);
+					c1.visualizar();
+					
 					Scanner leia = new Scanner(System.in);
+					
+					// Instanciamento | Classe -> Objeto Utilizavel
+					/*Conta c1 = new Conta(123456, 0001, 1, "Maria das Neves", 500f);
+					
 					c1.setSaldo(5000f);
 					
 					System.out.println("Titular: " + c1.getTitular());
-					System.out.println("Titular: " + c1.getSaldo());
+					System.out.println("Titular: " + c1.getSaldo());*/
 					
 					int opcao;
 
